@@ -1,60 +1,168 @@
+<!DOCTYPE html>
 <html>
+
     <head>
+
         <title>
             organik.com
         </title>
+
         <style>
+
         body{
             background-color: white;
-            font:large;
+            font-size :15px;
         }
+
         .Heading{
-            font-size: 24px;
-            padding: 10px 100px 5px 3px;
+            font-size: 25px;
+            padding: 10px 100px 5px 3px; /*top right bottom left*/
+            font-weight: 800;
         }
-        .Border{
-            margin-top: 2px;
-            border-top:1px solid rgb(232, 233, 232);
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }
+
         th{
             padding: 20px 20px;
-            cursor: pointer;
+            cursor: pointer; /*When we put cursor on it then cursor changes it type*/
+            font-weight: 100; /*Gives thickness of the font*/
+            transition: color 0.3s; /*Time duration to change the color of font from black to green*/
         }
+
+        th:hover{   /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
+            color: rgb(3, 99, 107); /*colour of the element when mouse is placed on it*/
+            transform: scale(1.09); /*how up the element will lift*/
+        }
+
+        .Border{
+            margin-top: 1px; /*Margin above the border */
+            border-top:1px solid lab(93.84% -10.68 7.77); /*Width Border-Style Color(to add border on top of the element inside the div)*/
+            width: 100%;
+            margin-left: auto; /*How much empty space in on each side*/
+            margin-right: auto;
+        }
+
+        .Info{
+            background-color: rgb(235, 254, 235);
+            padding:50px 0px 50px 120px;
+            font-family: Georgia; /*Which type of font is used here*/
+        }
+
+        .info-content{
+            display: flex; /*This will help in arranging text and image side by side*/
+            justify-content: space-between; /*Pushes the first item to the left, last item to the right and distributes any remaining space between them*/
+            align-items: center; /*aligns all items vertically centered[It means placing an element in the middle of its container from top to bottom (vertical axis), not just left to right.]*/
+            gap: 40px; /*Adds fixed spacing between each flex item*/
+        }
+
+        .info-text{
+            font-size: 50px;
+        }
+
+        .info-img{
+            width: 400px;
+            font-size: 150px;
+            padding: 50px 100px 80px 70px;
+        }
+
+        .Info1{
+            background-color: rgb(247, 247, 247);
+            padding: 40px 0px 50px 120px;
+            font-family: Georgia;
+        }
+
+        .tag-row{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .tag{
+            display:flex;
+            flex-direction: column; /*defines the direction in which flex items are placed inside a flex container(tag)*/
+            align-items: center; /*align item inside the tag at center*/
+            background-color: #e8f5e9;
+            padding: 20px 25px; /*padding inside the tag*/
+            border-radius: 20px; /*gives curves to the tag*/
+            font-family: Arial, sans-serif;
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1); /* Horizontal shadow vertical shadow Blur radius color*/
+            transition: transform 0.2s; /*animated after 0.2 second*/
+            width: 120px;
+
+        }
+
+        .tag:hover{
+            transform: scale(1.05);
+            background-color: #d4f0d9;
+        }
+
+        .icon{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .text{
+            font-size: 16px;
+            text-align: centre;
+        }
+
         </style>
+
     </head>
+
     <body>
         
         <table width="100%">
+
             <tr>
-                <th colspan="6">
+                <th colspan="6"> <!--Merge the 6 columns of row 1-->
         <div class="Heading">
-        <b>🍁 Fresh Garden</b>
+        🌱 Fresh Garden
         </div>
-        <th>
-            Home
         </th>
-        <th>
-            Vegetables
-        </th>
-        <th>
-            Fruits
-        </th>
-        <th>
-            Seasonal
-        </th>
-        <th>
-            About
-        </th>
-        <th>
-        Contact
-        </th>
-   
+        <th>Home</th>
+        <th>Vegetables</th>
+        <th>Fruits</th>
+        <th>Seasonal</th>
+        <th>Exotic</th>
+        <th>About</th>
+        <th>Contact</th>
         </tr>
+
         </table>
-       <div class="Border">
+
+       <div class="Border"></div>
+
+    <div class="Info">
+        <div class="info-content">
+            <div class="info-text">
+        Fresh & Organic
+        <p style="color: rgb(157, 159, 36); margin:0;">Delivered Daily</p><br> <!--Margin: Space between the Fresh & Organic and the Delivered Daily-->
+        <p style="font-size: 20px; margin-top:1px;">Farm-fresh vegetables and fruits delivered straight to your door. 100%<br>organic, locally sourced, and always fresh.</p>
     </div>
+    <img src="https://www.foodsafety.gov/sites/default/files/2025-03/grocery-bag-food-items.jpg" alt="veggies" class="info-img"> <!--alt: If image is not shown than is gives veegies in place of image-->
+    </div>
+    </div>
+    <div class="Info1">
+        <div class="tag-row">
+            <div class="tag">
+            <div class="icon"> 🚚</div>
+            <div class="text">Free Delivery</div>
+            </div>
+            <div class="tag">
+            <div class="icon"> 🛡️</div>
+            <div class="text">100% Organic</div>
+            </div>
+            <div class="tag">
+            <div class="icon"> 🕗</div>
+            <div class="text">Fresh Daily</div>
+            </div>
+            <div class="tag">
+            <div class="icon"> ♻️</div>
+            <div class="text">Eco-Friendly</div>
+            </div>
+               </div>
+
+            </div>
+        
+
     </body>
 </html>
