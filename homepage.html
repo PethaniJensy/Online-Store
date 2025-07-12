@@ -17,7 +17,8 @@
         .Heading{
             font-size: 25px;
             padding: 10px 100px 5px 3px; /*top right bottom left*/
-            font-weight: 800;
+            font-weight: 700;
+            font-family: Arial, sans-serif;
         }
 
         th{
@@ -41,9 +42,9 @@
         }
 
         .Info{
-            background-color: transparent;
+            background-color: rgb(224, 239, 224);
             padding:120px 0px 130px 120px;
-            font-family: Georgia; /*Which type of font is used here*/
+            font-family: Arial, sans-serif; /*Which type of font is used here*/
             position:relative;
             z-index: 1;
         }
@@ -54,12 +55,12 @@
             left: 0; /*start the image from the very left too*/
             width: 100%; /*.blur-bg div is set to 100% width and 100% height of its parent(.Info section)*/
             height: 100%;
-            background-image: url(https://t3.ftcdn.net/jpg/08/46/62/34/360_F_846623452_km9jqvTFd9shwolhCvNxrOV2IeB5YJ5i.jpg); /*set image as background*/
+            background-image: url(veggies.jpg); /*set image as background*/
             background-size: cover; /*fill the entire div with the image(cover) and make sure the centre of the image is aligned in the middle of the div(centre). Crop if necessary*/ 
             background-position: center;
-            filter:blur(2px); /*blurs the background image*/
+            filter:blur(0px); /*blurs the background image*/
             z-index: 1; /*blurred image sits behind*/
-            opacity: 1; /*transparency of an element*/
+            opacity: 0.5; /*transparency of an element*/
         }
 
         .info-content{
@@ -67,14 +68,14 @@
             z-index: 2; /*text sit front*/
             display: flex; /*This change the layout from a block style(stacked vertically) to a flex (placed side by side)*/
             justify-content: space-between; /*First item goes to the left Last item goes to the right Space is spread in between*/
-            align-items: center;
+            align-items: centre;
             gap:40px; /*adds space between flex items*/
         }
 
         .info-text{
-            font-size: 50px;
-            font-weight: 500;
-            color: #fdfdfd;
+            font-size: 55px;
+            font-weight: 600;
+            color: #050505b9;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0,.85); /*How far the shadow goes left/right How far the shadow goes up/down How blurry the shadow should be The shadow’s color*/
         }
 
@@ -85,9 +86,9 @@
         }
 
         .Info1{
-            background-color: rgb(247, 247, 247);
+            background-color: rgba(151, 197, 149, 0.349);
             padding: 40px 0px 50px 120px;
-            font-family: Georgia;
+            font-family: Arial, sans-serif;
         }
 
         .tag-row{
@@ -100,7 +101,7 @@
             display:flex;
             flex-direction: column; /*defines the direction in which flex items are placed inside a flex container(tag)*/
             align-items: center; /*align item inside the tag at center*/
-            background-color: #e8f5e9;
+            background-color: #edf2ed;
             padding: 20px 25px; /*padding inside the tag*/
             border-radius: 20px; /*gives curves to the tag*/
             font-family: Arial, sans-serif;
@@ -112,7 +113,7 @@
 
         .tag:hover{
             transform: scale(1.05);
-            background-color: #d4f0d9;
+            background-color: #dee6e0;
         }
 
         .icon{
@@ -122,7 +123,64 @@
 
         .text{
             font-size: 16px;
-            text-align: centre;
+            text-align: center;
+        }
+
+        .category{
+            text-align: center;
+            font-weight: 600;
+            font-size: 40px;
+            font-family: Arial, sans-serif;
+            background-color: rgb(248, 254, 248);
+        }
+
+        .product-row{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product{
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+            padding: 8px;
+            width: 400px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product img{
+            width: 10%;
+            height: 0px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product p{
+            font-size: 20px;
+            font-weight: 200;
+            font-family: Arial, sans-serif;
+        }
+
+        .product button{
+            border-radius: 8px;
+            background-color:rgb(189, 220, 189);
+            border-width: 1px;
+            border-color: transparent;
+            padding: 8px 15px 8px 15px;
+            font-size: 15px;
+            margin-bottom: 22px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .product button:hover{
+            transform: scale(1.03);
+            background-color: rdb(229,239,229);
         }
 
         </style>
@@ -136,7 +194,7 @@
             <tr>
                 <th colspan="6"> <!--Merge the 6 columns of row 1-->
         <div class="Heading">
-        🌱 Fresh Garden
+        🌱 FreshMart
         </div>
         </th>
         <th>Home</th>
@@ -158,7 +216,7 @@
         <div class="info-content">
             <div class="info-text">
         Fresh & Organic
-        <p style="color: rgb(233, 239, 157); margin:0;">Delivered Daily</p><br> <!--Margin: Space between the Fresh & Organic and the Delivered Daily-->
+        <p style="color: rgba(37, 132, 21, 0.749); margin:0;">Delivered Daily</p><br> <!--Margin: Space between the Fresh & Organic and the Delivered Daily-->
         <p style="font-size: 20px; margin-top:1px;">Farm-fresh vegetables and fruits delivered straight to your door. 100%<br>organic, locally sourced, and always fresh.</p>
     </div>
     </div>
@@ -184,7 +242,27 @@
                </div>
 
             </div>
-        
+            <div class="category"><br>
+                Shop by Category<br>
+                <p style="font-size:20px; color:rgb(181, 220, 181); font-weight: 100;">Discover our fresh selection of organic produce</p>
+                <div class="button">
+                <div class="product-row">
+                <div class="product">
+                    <img src="vegetable.jpg" alt="Vegetable" style="width:400px; height:290px;">
+                    <p>Fresh Vegetables<br>
+                    <p style="font-size: 15px; color: rgb(181, 220, 181); margin-bottom:1px;">120+ Products</p>
+                    <button>Shop now -></button>
+                    </div>
+                    <div class="product">
+                    <img src="fruit.jpg" alt="Fruit" style="width:400px; height:290px;">
+                    <p>Sweet & Juicy Fruits<br>
+                    <p style="font-size: 15px; color: rgb(181, 220, 181); margin-bottom: 1px;">80+ Products</p>
+                    <button>Shop now -></button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>
