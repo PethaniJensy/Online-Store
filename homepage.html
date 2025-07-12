@@ -14,11 +14,9 @@
             font-size :15px;
         }
 
-        .Heading{
-            font-size: 25px;
-            padding: 10px 100px 5px 3px; /*top right bottom left*/
-            font-weight: 700;
-            font-family: Arial, sans-serif;
+        .Heading img{
+            width: 71px;
+            margin-top: ;/*top right bottom left*/   
         }
 
         th{
@@ -31,14 +29,6 @@
         th:hover{   /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
             color: rgb(3, 99, 107); /*colour of the element when mouse is placed on it*/
             transform: scale(1.09); /*how up the element will lift*/
-        }
-
-        .Border{
-            margin-top: 1px; /*Margin above the border */
-            border-top:1px solid lab(93.84% -10.68 7.77); /*Width Border-Style Color(to add border on top of the element inside the div)*/
-            width: 100%;
-            margin-left: auto; /*How much empty space in on each side*/
-            margin-right: auto;
         }
 
         .Info{
@@ -74,7 +64,7 @@
 
         .info-text{
             font-size: 55px;
-            font-weight: 600;
+            font-weight: 700;
             color: #050505b9;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0,.85); /*How far the shadow goes left/right How far the shadow goes up/down How blurry the shadow should be The shadow’s color*/
         }
@@ -132,6 +122,7 @@
             font-size: 40px;
             font-family: Arial, sans-serif;
             background-color: rgb(248, 254, 248);
+            padding:50px 0px 50px 0px;
         }
 
         .product-row{
@@ -143,26 +134,26 @@
         }
 
         .product{
-            background-color: #ffffff;
+            background-color: #dde8dc25;
             border: 1px solid #ddd;
             border-radius: 12px;
             box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-            padding: 8px;
+            padding: 16px;
             width: 400px;
             text-align: center;
             transition: transform 0.3s;
         }
 
         .product img{
-            width: 10%;
-            height: 0px;
+            width:400px;
+            height:290px;
             object-fit: cover;
-            border-radius: 8px;
+            border-radius: 12px;
         }
 
         .product p{
             font-size: 20px;
-            font-weight: 200;
+            font-weight: 500;
             font-family: Arial, sans-serif;
         }
 
@@ -181,7 +172,177 @@
         .product button:hover{
             transform: scale(1.03);
             background-color: rdb(229,239,229);
+            box-shadow: 0px 5px 5px rgb(229, 228, 228);
+            
         }
+
+        .product:hover{
+            transform: scale(1.03);
+            box-shadow: 0px 10px 10px rgb(206, 204, 204);
+        }
+
+        .cat{
+            background-color:rgba(151, 197, 149, 0.349);
+            padding: 50px 0px 60px 0px;
+        }
+
+        .product1{
+            background-color: #eff9ee;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+            padding: 13px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+
+        }
+
+        .product-row1{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product1 img{
+            width:300px;
+            height:290px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .product1 p{
+            font-size:15px;
+            text-align: left;
+            font-weight: 500;
+            font-family: Arial,sans-serif;
+        }
+
+        .product1 button{
+            border-radius: 9px;
+            border-color: transparent;
+            background-color:rgb(189, 220, 189);
+            align-items: center;
+            padding: 13px 110px 13px 110px;
+            margin-top: 20px;
+        }
+
+        .product1:hover{
+            transform: scale(1.03);
+            box-shadow: 0px 10px 10px rgb(206, 204, 204);
+        }
+
+        .product1 button:hover{
+            transform: scale(1.03);
+            background-color: rdb(229,239,229);
+            box-shadow: 0px 5px 5px rgb(229, 228, 228);
+            
+        }
+
+        .rating{
+            font-size:16px;
+            padding:0px 250px 0px 0px;
+            color: rgba(151, 197, 149, 0.929);
+            font-weight: 100;
+        }
+
+        .price{
+            font-size:16px;
+            text-align: left;
+            color:rgb(94, 169, 94);
+            margin-top: 10px;
+        }
+
+        .row1{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .preview{
+            background-color: #dde8dc25;
+            border: transparent;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+            padding: 16px;
+            width: 300px;
+            height:140px;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .review{
+            font-size: 14px;
+            font-weight: 100;
+            font-family: Arial,sans-serif;
+            color:rgba(151, 197, 149, 0.929);
+            margin-top: 15px;
+            justify-content:space-between;
+        }
+
+        .name{
+            font-size: 14px;
+            font-family: Arial,sans-serif;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.725); 
+        }
+
+        .type{
+            font-size: 13px;
+            font-weight: 100;
+            color:rgb(185, 211, 184);
+        }
+
+        .rating1{
+            font-size: 15px;
+            color: rgb(105, 198, 23);
+        }
+
+        .preview:hover{
+            transform:scale(1.03);
+            box-shadow: 0px 5px 5px rgb(229, 228, 228);
+        }
+
+        .footer-section {
+  background-color: #e4f3e1;
+  padding: 40px 60px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.footer-table td {
+  vertical-align: top;
+  padding: 10px;
+  font-size: 14px;
+  width: 25%;
+  color: #598257;
+}
+
+.footer-head {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #598257;
+}
 
         </style>
 
@@ -194,7 +355,7 @@
             <tr>
                 <th colspan="6"> <!--Merge the 6 columns of row 1-->
         <div class="Heading">
-        🌱 FreshMart
+        <img src="Fresh mart.png" alt="logo">
         </div>
         </th>
         <th>Home</th>
@@ -209,8 +370,6 @@
 
         </table>
 
-       <div class="Border"></div>
-
     <div class="Info">
         <div class="blur-bg"></div> <!--Class to add the blurred background-->
         <div class="info-content">
@@ -221,48 +380,148 @@
     </div>
     </div>
     </div>
+    
     <div class="Info1">
         <div class="tag-row">
             <div class="tag">
             <div class="icon"> 🚚</div>
             <div class="text">Free Delivery</div>
-            </div>
-            <div class="tag">
+        </div>
+        <div class="tag">
             <div class="icon"> 🛡️</div>
             <div class="text">100% Organic</div>
-            </div>
-            <div class="tag">
+        </div>
+        <div class="tag">
             <div class="icon"> 🕗</div>
             <div class="text">Fresh Daily</div>
-            </div>
-            <div class="tag">
+        </div>
+        <div class="tag">
             <div class="icon"> ♻️</div>
             <div class="text">Eco-Friendly</div>
+        </div>
+    </div>
             </div>
-               </div>
 
-            </div>
-            <div class="category"><br>
+            <div class="category">
                 Shop by Category<br>
                 <p style="font-size:20px; color:rgb(181, 220, 181); font-weight: 100;">Discover our fresh selection of organic produce</p>
                 <div class="button">
                 <div class="product-row">
                 <div class="product">
-                    <img src="vegetable.jpg" alt="Vegetable" style="width:400px; height:290px;">
-                    <p>Fresh Vegetables<br>
+                    <img src="vegetable.jpg" alt="Vegetable">
+                    <p>Fresh Vegetables<br></p>
                     <p style="font-size: 15px; color: rgb(181, 220, 181); margin-bottom:1px;">120+ Products</p>
                     <button>Shop now -></button>
-                    </div>
+                </div>
                     <div class="product">
-                    <img src="fruit.jpg" alt="Fruit" style="width:400px; height:290px;">
-                    <p>Sweet & Juicy Fruits<br>
+                    <img src="fruit.jpg" alt="Fruit">
+                    <p>Sweet & Juicy Fruits<br></p>
                     <p style="font-size: 15px; color: rgb(181, 220, 181); margin-bottom: 1px;">80+ Products</p>
                     <button>Shop now -></button>
                     </div>
-                    </div>
+                </div>
                 </div>
             </div>
+
+        <div class="category cat">
+            Featured Products<br>
+            <p style="font-size: 20px; color:rgb(181,220,181); font-weight: 100;">Hand-picked favourites from our farm partners</p>
+        <div class="button">
+                <div class="product-row1">
+                <div class="product1">
+                    <img src="tomato.jpg" alt="Fruit">
+                    <p>Fresh Organic Tomatoes (500g)<br></p>
+                    <div class="rating">★★★★☆(4.3)</div>
+                    <div class="price">₹39</div>
+                    <button>Shop now -></button>
+                    </div>
+                    <div class="product1">
+                    <img src="red bell pepper.jpg" alt="Vegetable">
+                    <p>Red Bell Peppers (500g)<br></p>
+                    <div class="rating">★★★★☆(4.5)</div>
+                    <div class="price">₹76</div>
+                    <button>Shop now -></button>
+                    </div>
+                    <div class="product1">
+                    <img src="strawberries.jpg" alt="Fruit">
+                    <p>Freash Strawberries (200g)<br></p>
+                    <div class="rating">★★★★☆(4.9)</div>
+                    <div class="price">₹88</div>
+                    <button>Shop now -></button>
+                    </div>
+                    <div class="product1">
+                    <img src="spinach.jpg" alt="Vegetable">
+                    <p>Organic Spinach Bundle (100g) <br></p>
+                    <div class="rating">★★★★☆(4.7)</div>
+                    <div class="price">₹30</div>
+                    <button>Shop now -></button>
+                    </div>
+                </div>
+                </div>
+        </div>
         </div>
 
+        <div class="category">
+            What Our Customers Say
+        <div class="row1">
+            <div class="preview">
+                <div class="rating1">★★★★★</div>
+                <p class="review">"The quality of vegetables here is outstanding! Everything is so fresh and the delivery is always on time."</p>
+                <div class="name">Sakshi Patel</div>
+                <div class="type">Home Chef</div>
+            </div>
+            <div class="preview">
+                <div class="rating1">★★★★★</div>
+                <p class="review">"I love that everything is organic and locally sourced. It really makes a difference in taste and nutrition."</p>
+                <div class="name">Khushi Dave</div>
+                <div class="type">Health Enthusiast</div>
+            </div>
+            <div class="preview">
+                <div class="rating1">★★★★★</div>
+                <p class="review">"FreshMart has made my grocery shopping so much easier. The kids love the fresh fruitd!"</p>
+                <div class="name">Aayushi Panchal</div>
+                <div class="type">Busy Mom</div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <footer class="footer-section">
+            <table class="footer-table">
+                <tr>
+                    <td rowspan="6" class="footer-logo-call"><img src="Fresh mart.png" alt="logo" class="footer-logo"><br>
+                        <p class="footer-desc">
+                            Your trusted source for fresh, organic vegetables<br> and fruits.Delivered straight from local farms to<br> your doorstep.
+                        </p>
+                        </td>
+                    <td class="footer-head" style="color: black;"> QUICK LINKS</td>
+                    <td class="footer-head" style="color: black;">CUSTOMER SERVICE</td>
+                    <td class="footer-head" style="color: black;">CONTACT US</td>
+                </tr>
+                <tr>
+                    <td>Shop all</td>
+                    <td>My Account</td>
+                    <td>📞 0985688503</td>
+                </tr>
+                <tr>
+                    <td>Vegetables</td>
+                    <td>Order History</td>
+                    <td>📧 hello@freshmart.com</td>
+                </tr>
+                <tr>
+                    <td>Fruits</td>
+                    <td>About Us</td>
+                    <td>📍 123 Farm Street Fresh Valley, CA 90210</td>
+                </tr>
+                <tr>
+                    <td>Organic</td>
+                    <td>Contact</td>
+                </tr>
+                <tr>
+                    <td>Seasonal</td>
+                    <td>Blog</td>
+                </tr>
+            </table>
+        </footer>
     </body>
 </html>
