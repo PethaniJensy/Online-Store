@@ -22,7 +22,7 @@
             position:sticky;
             top:0;
             z-index:1000;
-            background-color: rgba(255, 255, 255, 0.543);
+            background-color: rgb(255, 255, 255);
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -84,14 +84,151 @@
 
         .about{
             font-size: 15px;
-            color:rgb(243, 252, 243);
+            color:rgb(181, 221, 181);
             text-align: center;
         }
 
         .whole{
-            background-color:rgba(133, 171, 131, 0.4);
+            background-color:rgba(231, 247, 231, 0.4);
             padding:55px;
         }
+
+        .box{
+            border-radius: 10px;
+            background-color: rgb(243, 251, 242);
+            padding:70px;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            margin-left: 60px;
+            margin-right: 50px;
+            border: 2px solid rgb(236, 246, 237);
+        }
+
+        .info{
+            font-size: 23px;
+            font-weight: 500;
+            font-family:Arial,sans-serif;
+            margin-bottom: 30px;
+            margin-top: -20px;
+        }
+
+        .name-fields {
+  display: flex;
+  gap: 60px; /* spacing between first and last name */
+  margin-bottom: 15px;
+}
+
+.field {
+  flex: 1; /* both inputs take equal space */
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 331px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+label{
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.side{
+    display:flex;
+    gap:1px;
+}
+
+.contact-info{
+    border-radius: 10px;
+    border: 2px solid rgb(236, 246, 237);
+    background-color: rgb(243, 251, 242);
+    padding:190px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.contact-info h2{
+    margin-top: -160px;
+    margin-left: -160px;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+}
+
+.contact-info p{
+    font-size: 18px;
+    margin-left: -160px;
+}
+
+.info1{
+    font-size: 11px;
+    margin-left: -140px;
+    color: rgb(64, 127, 73);
+}
+
+.que{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: Arial,sans-serif;
+    font-weight: 600;
+}
+
+.info2{
+    font-size: 17px;
+    margin-left: -140px;
+    color: rgb(64, 127, 73);
+    text-align: center;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.box2{
+    border-radius: 10px;
+    background-color: rgb(249, 255, 249);
+    padding:10px 20px 15px 20px;
+    border:2px solid rgb(239, 250, 239);
+    margin-bottom: 10px;
+    max-width: 500px;
+    width:100%;
+}
+
+.side1{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.box2 p{
+    font-size: 19px;
+    font-family: arial,sans-serif;
+}
+
+p.info3{
+    font-size: 14px;
+    color: rgb(177, 194, 179);
+}
+
 </style>
 
     </head>
@@ -106,14 +243,14 @@
         <img src="Fresh mart.png" alt="logo">
         </div>
         </th>
-        <th>Home</th>
-        <th>Vegetables</th>
-        <th>Fruits</th>
-        <th>Seasonal</th>
-        <th>Exotic</th>
-        <th>About</th>
-        <th>Contact</th>
-        <th>Sign up</th>
+        <th><a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a></th>
+        <th><a href="vegetables.html" style="text-decoration: none; color: inherit;">Vegetables</a></th>
+        <th><a href="fruits.html" style="text-decoration: none; color: inherit;">Fruits</a></th>
+        <th><a href="seasonal.html" style="text-decoration: none; color: inherit;">Seasonal</a></th>
+        <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
+        <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
+        <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
+        <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
         </tr>
 
         </table>
@@ -127,6 +264,79 @@
     <table>
         
     </table>
+      <div class="side">
+      <div class="box">
+        <form class="box1">
+          <div class="info">Send us a Message</div>
+
+    <div class="name-fields">
+      <div class="field">
+        <label for="fname">First Name*</label>
+        <input type="text" id="fname" name="fname" placeholder="Pethani Jensy" required>
+      </div>
+      <div class="field">
+        <label for="lname">Last Name*</label>
+        <input type="text" id="lname" name="lname" placeholder="Milanbhai" required>
+      </div>
+    </div>
+
+    <label for="email">Email Address*</label><br>
+    <input type="email" id="email" name="email" placeholder="1234@gmail.com" required><br>
+
+    <label for="phone number">Phone Number</label><br>
+    <input type="phone number" id="phone number" name="phone number" placeholder="2387569036" required><br>
+
+    <label for="subject">Subject*</label><br>
+    <input type="subject" id="subject" name="subject"  required><br>
+
+    <label for="message">Message*</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<div class="contact-info">
+    <h2>Get in Touch</h2>
+    <p>📞Phone</p>
+    <div class="info1">90463186<br>Customer Service<br>Mon-Fri 8AM-8PM, Sat-Sun 9AM-6PM</div>
+    <p>📧Email</p>
+    <div class="info1">hello@freshmart.com<br>General Inquiries<br>We'll respond within 24 hours</div>
+    <p>📍Address</p>
+    <div class="info1">123 Farm Street<br>Fresh Valley, CA 90210<br>visit our warehouse & offices</div>
+    <p>🕐Business Hours</p>
+    <div class="info1">Mon-Fri: 8AM-8PM<br>Sat-Sun: 9AM-6PM<br>customer service availability</div>
+</div>
+</div>
+
+<div class="que">
+    Frequently Asked Questions<br><br>
+    <div class="info2">Quick answers to common questions</div>
+</div>
+
+<div class="side1">
+<div class="box2">
+    <b><p>What are your delivery areas?</p></b>
+    <p class="info3">We currently deliver to most areas within 25 miles of our warehouse. Enter your ZIP<br> code at checkout to check availability.</p>
+</div>
+
+<div class="box2">
+    <b><p>How do you ensure freshness?</p></b>
+    <p class="info3">All produce is harvested within 24-48 hours of delivery and stored in climate-<br>controlled facilities. We use insulated packaging to maintain optimal temperature.</p>
+</div>
+</div>
+
+<div class="side1">
+<div class="box2">
+    <b><p>Can I modify or cancel my order?</p></b>
+    <p class="info3">Orders can be modify or cancelled up to 2 hours before your scheduled delivery<br>time. Contact customer service for assistance.</p>
+</div>
+
+<div class="box2">
+    <b><p>Do you offer organic certification?</p></b>
+    <p class="info3">Yes! All products marked as organic are certified by USDA-approved agencies.<br>Certificates are available upon request.</p>
+</div>
+</div>
 
 <footer class="footer-section">
             <table class="footer-table">
