@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <title>
-            organik.com
-        </title>
+    <title>
+        organik.com
+    </title>
 
-        <style>
-
-        body{
+    <style>
+        body {
             background-color: white;
-            font-size :15px;
+            font-size: 15px;
         }
 
-        .Heading img{
-            width: 71px;  
+        .Heading img {
+            width: 71px;
         }
 
-        .sticky-header{
-            position:sticky;
-            top:0;
-            z-index:1000;
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
             background-color: rgb(255, 255, 255);
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        th{
+        th {
             padding: 20px 20px;
-            cursor: pointer; /*When we put cursor on it then cursor changes it type*/
-            font-weight: 100; /*Gives thickness of the font*/
-            transition: color 0.3s; /*Time duration to change the color of font from black to green*/
+            cursor: pointer;
+            /*When we put cursor on it then cursor changes it type*/
+            font-weight: 100;
+            /*Gives thickness of the font*/
+            transition: color 0.3s;
+            /*Time duration to change the color of font from black to green*/
         }
 
-        th:hover{   /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
-            color: rgb(3, 99, 107); /*colour of the element when mouse is placed on it*/
-            transform: scale(1.09); /*how up the element will lift*/
+        th:hover {
+            /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
+            color: rgb(3, 99, 107);
+            /*colour of the element when mouse is placed on it*/
+            transform: scale(1.09);
+            /*how up the element will lift*/
         }
 
         .footer-section {
@@ -61,7 +66,7 @@
 
         .footer-head {
             font-weight: bold;
-            padding-bottom: 10px;   
+            padding-bottom: 10px;
         }
 
         .footer-logo {
@@ -74,39 +79,440 @@
             line-height: 1.6;
             color: #598257;
         }
- </style>
 
-    </head>
+        .price {
+            font-size: 16px;
+            text-align: left;
+            color: rgb(94, 169, 94);
+            margin-top: 10px;
+        }
 
-    <body>
-        <div class="sticky-header">
+        .row1 {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .align {
+            gap: 20px;
+        }
+
+        .hero {
+            background: #d8ecd3;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        main {
+            display: flex;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        aside {
+            width: 250px;
+            padding-right: 2rem;
+        }
+
+        aside h3{
+            margin-top: 1.5rem;
+        }
+
+        aside label {
+            display: block;
+            margin: 0.5rem 0;
+        }
+
+        .products {
+            flex: 1;
+            display: flex;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+            margin-left: 50px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+            width: 250px;
+            padding: 1rem;
+            position: relative;
+            height: 380px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height:180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+
+        .badge {
+            background: green;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .details {
+            margin-top: 1rem;
+        }
+
+        .details .category {
+            font-size: 0.75rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .details h3 {
+            margin: 0.2rem 0;
+            font-family: arial, sans-serif;
+        }
+
+        .rating{
+            font-size:16px;
+            padding:0px 250px 0px 0px;
+            color: rgba(151, 197, 149, 0.929);
+            font-weight: 100;
+        }
+
+        .price{
+            font-size:16px;
+            text-align: left;
+            color:rgb(94, 169, 94);
+            margin-top: 10px;
+        }
+
+        .products button{
+            border-radius: 9px;
+            border-color: transparent;
+            background-color:rgb(189, 220, 189);
+            align-items: center;
+            padding: 10px 80px 10px 80px;
+            margin-top: 20px;
+        }
+
+        .product-card:hover{
+            transform: scale(1.03);
+            box-shadow: 0px 10px 10px rgb(206, 204, 204);
+        }
+
+        .products button:hover{
+            transform: scale(1.03);
+            background-color: rdb(229,239,229);
+            box-shadow: 0px 5px 5px rgb(229, 228, 228);
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sticky-header">
         <table width="100%">
 
             <tr>
                 <th colspan="6"> <!--Merge the 6 columns of row 1-->
-        <div class="Heading">
-        <img src="Fresh mart.png" alt="logo">
-        </div>
-        </th>
-        <th><a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a></th>
-        <th><a href="vegetables.html" style="text-decoration: none; color: inherit;">Vegetables</a></th>
-        <th><a href="fruits.html" style="text-decoration: none; color: inherit;">Fruits</a></th>
-        <th><a href="seasonal.html" style="text-decoration: none; color: inherit;">Seasonal</a></th>
-        <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
-        <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
-        <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
-        <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
-        </tr>
+                    <div class="Heading">
+                        <img src="Fresh mart.png" alt="logo">
+                    </div>
+                </th>
+                <th><a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a></th>
+                <th><a href="vegetables.html" style="text-decoration: none; color: inherit;">Vegetables</a></th>
+                <th><a href="fruits.html" style="text-decoration: none; color: inherit;">Fruits</a></th>
+                <th><a href="seasonal.html" style="text-decoration: none; color: inherit;">Seasonal</a></th>
+                <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
+                <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
+                <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
+                <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
+            </tr>
 
         </table>
+
+        <section class="hero">
+            <h1>Fresh Produce</h1>
+            <p>Discover our selection of farm-fresh vegetables and fruits</p>
+        </section>
+
+        <main>
+            <aside>
+                <h3>Search Products</h3>
+                <input type="text" placeholder="Search...">
+
+                <h4>Price Range</h4>
+                <label><input type="radio" name="price" checked> Under $5</label>
+                <label><input type="radio" name="price"> $5 - $10</label>
+                <label><input type="radio" name="price"> $10 - $20</label>
+                <label><input type="radio" name="price"> Over $20</label>
+
+            </aside>
+
+            <section class="products">
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="tomato.jpg" alt="Tomato">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Fresh Organic Tomatoes</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="potato.jpg" alt="Potato">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Potato</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="onion.jpg" alt="Onion">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Onion</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="carrot.webp" alt="Carrot">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Carrot</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="spinach.jpg" alt="Spinach">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Spinach</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="cabbage.jpg" alt="Cabbage">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Cabbage</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="cauliflower.jpg" alt="Cauliflower">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Cauliflower</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="eggplant.webp" alt="Bringal">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>EggPLant (Bringal)</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="lettuce.jpg" alt="Lettuce">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Lettuce</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="raddish.jpg" alt="Raddish">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Raddish</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="okra.webp" alt="Ladyfinger">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Okra (Lady Finger)</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="bitter gourd.webp" alt="Bitter Gourd">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Bitter gourd</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="bottle gourd.webp" alt="Bottle Gourd">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Bottle gourd</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="drum stick.jpg" alt="Drumstick">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Drumstick</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="beetroot.jpg" alt="Beetroot">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Beetroot</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                 <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="ridge gourd.jpeg" alt="Ridge gourd">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Ridge gourd</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="cucumber.jpg" alt="Cucumber">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Cucumber</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="peas.webp" alt="Peas">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Peas</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="pointed gourd.webp" alt="Pointed gourd">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Pointed gourd</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="red bell pepper.jpg" alt="Red bell pepper">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Red bell pepper</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
         <footer class="footer-section">
             <table class="footer-table">
                 <tr>
-                    <td rowspan="6" class="footer-logo-call"><img src="Fresh mart.png" alt="logo" class="footer-logo"><br>
+                    <td rowspan="6" class="footer-logo-call"><img src="Fresh mart.png" alt="logo"
+                            class="footer-logo"><br>
                         <p class="footer-desc">
-                            Your trusted source for fresh, organic vegetables<br> and fruits.Delivered straight from local farms to<br> your doorstep.
+                            Your trusted source for fresh, organic vegetables<br> and fruits.Delivered straight from
+                            local farms to<br> your doorstep.
                         </p>
-                        </td>
+                    </td>
                     <td class="footer-head" style="color: black;"> QUICK LINKS</td>
                     <td class="footer-head" style="color: black;">CUSTOMER SERVICE</td>
                     <td class="footer-head" style="color: black;">CONTACT US</td>
@@ -136,5 +542,9 @@
                 </tr>
             </table>
         </footer>
-        </body>
+</body>
+
 </html>
+
+
+
