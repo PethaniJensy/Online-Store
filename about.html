@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <title>
-            organik.com
-        </title>
+    <title>
+        organik.com
+    </title>
 
-        <style>
-
-        body{
+    <style>
+        body {
             background-color: white;
-            font-size :15px;
+            font-size: 15px;
         }
 
-        .Heading img{
-            width: 71px;  
+        .Heading img {
+            width: 71px;
         }
 
-        .sticky-header{
-            position:sticky;
-            top:0;
-            z-index:1000;
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
             background-color: rgb(255, 255, 255);
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        th{
+        th {
             padding: 20px 20px;
-            cursor: pointer; /*When we put cursor on it then cursor changes it type*/
-            font-weight: 100; /*Gives thickness of the font*/
-            transition: color 0.3s; /*Time duration to change the color of font from black to green*/
+            cursor: pointer;
+            /*When we put cursor on it then cursor changes it type*/
+            font-weight: 100;
+            /*Gives thickness of the font*/
+            transition: color 0.3s;
+            /*Time duration to change the color of font from black to green*/
         }
 
-         th:hover{   /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
-            color: rgb(3, 99, 107); /*colour of the element when mouse is placed on it*/
-            transform: scale(1.09); /*how up the element will lift*/
+        th:hover {
+            /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
+            color: rgb(3, 99, 107);
+            /*colour of the element when mouse is placed on it*/
+            transform: scale(1.09);
+            /*how up the element will lift*/
         }
 
-        .about{
+        .about {
             background-color: rgba(133, 171, 131, 0.4);
         }
 
-        .category{
+        .category {
             text-align: center;
             font-weight: 600;
             font-size: 40px;
             font-family: Arial, sans-serif;
-            padding:70px 0px 10px 0px;
+            padding: 70px 0px 10px 0px;
         }
 
-        .info{
+        .info {
             text-align: center;
-            color:rgba(58, 104, 56, 0.786);
-            padding:2px 2px 23px 2px;
+            color: rgba(58, 104, 56, 0.786);
+            padding: 2px 2px 23px 2px;
             font-size: 15px;
         }
 
-        .category1{
+        .category1 {
             text-align: left;
             font-weight: 600;
             font-size: 40px;
             font-family: Arial, sans-serif;
-            padding:70px 0px 10px 0px;
+            padding: 70px 0px 10px 0px;
         }
 
-        .info1{
+        .info1 {
             text-align: left;
-            color:rgba(58, 104, 56, 0.786);
+            color: rgba(58, 104, 56, 0.786);
             font-size: 17px;
         }
 
-        .about-row{
+        .about-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -81,7 +86,7 @@
             flex-wrap: wrap;
         }
 
-        .about-text{
+        .about-text {
             flex: 1;
             min-width: 300px;
         }
@@ -93,12 +98,12 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-         .Info1{
+        .Info1 {
             padding: 0px 120px 50px 120px;
             font-family: Arial, sans-serif;
         }
 
-        .tag-row{
+        .tag-row {
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -107,225 +112,241 @@
             margin-top: 1px;
         }
 
-        .tag{
+        .tag {
             flex: 1 1 calc(33.33% - 20px);
             max-width: calc(33.33% - 10px);
             background-color: #edf2ed;
-            padding: 6px 25px; /*padding inside the tag*/
-            border-radius: 11px; /*gives curves to the tag*/
+            padding: 6px 25px;
+            /*padding inside the tag*/
+            border-radius: 11px;
+            /*gives curves to the tag*/
             font-family: Arial, sans-serif;
-            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1); /*How far the shadow goes left/right How far the shadow goes up/down How soft the shadow’s edges are The shadow’s color*/
-            transition: transform 0.2s; /*animated after 0.2 second*/
+            box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+            /*How far the shadow goes left/right How far the shadow goes up/down How soft the shadow’s edges are The shadow’s color*/
+            transition: transform 0.2s;
+            /*animated after 0.2 second*/
             height: 160px;
             box-sizing: border-box;
         }
 
-        .tag:hover{
+        .tag:hover {
             transform: scale(1.03);
-            background-color:rgb(232, 236, 231);
+            background-color: rgb(232, 236, 231);
 
         }
 
-        .category2{
+        .category2 {
             font-size: 17px;
             font-weight: 600;
         }
 
-        .cat th{
+        .cat th {
             font-size: 35px;
             color: green;
         }
 
-        td{
+        td {
             font-size: 15px;
-            color:rgb(203, 219, 203);
+            color: rgb(203, 219, 203);
             font-weight: 100;
         }
 
         .footer-section {
-        background-color: #e4f3e1;
-        padding: 40px 60px;
-        font-family: Arial, sans-serif;
-        color: #333;
+            background-color: #e4f3e1;
+            padding: 40px 60px;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
 
         .footer-table {
-        width: 100%;
-        table-layout: fixed;
-        border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
         }
 
         .footer-table td {
-        vertical-align: top;
-        padding: 10px;
-        font-size: 14px;
-        width: 25%;
-        color: #598257;
+            vertical-align: top;
+            padding: 10px;
+            font-size: 14px;
+            width: 25%;
+            color: #598257;
         }
 
         .footer-head {
-        font-weight: bold;
-        padding-bottom: 10px;
+            font-weight: bold;
+            padding-bottom: 10px;
         }
 
         .footer-logo {
-        width: 80px;
-        margin-bottom: 10px;
+            width: 80px;
+            margin-bottom: 10px;
         }
 
         .footer-desc {
-        font-size: 13px;
-        line-height: 1.6;
-        color: #598257;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #598257;
         }
 
-        .category3{
-        text-align: center;
-        font-weight: 600;
-        font-size: 40px;
-        font-family: Arial, sans-serif;
-        padding:40px 0px 40px 0px;
+        .category3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 40px;
+            font-family: Arial, sans-serif;
+            padding: 40px 0px 40px 0px;
         }
+    </style>
 
-        </style>
+</head>
 
-    </head>
-
-    <body>
-        <div class="sticky-header">
+<body>
+    <div class="sticky-header">
         <table width="100%">
 
             <tr>
                 <th colspan="6"> <!--Merge the 6 columns of row 1-->
-        <div class="Heading">
-        <img src="Fresh mart.png" alt="logo">
-        </div>
-        </th>
-        <th><a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a></th>
-        <th><a href="vegetables.html" style="text-decoration: none; color: inherit;">Vegetables</a></th>
-        <th><a href="fruits.html" style="text-decoration: none; color: inherit;">Fruits</a></th>
-        <th><a href="seasonal.html" style="text-decoration: none; color: inherit;">Seasonal</a></th>
-        <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
-        <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
-        <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
-        <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
-        </tr>
+                    <div class="Heading">
+                        <img src="Fresh mart.png" alt="logo">
+                    </div>
+                </th>
+                <th><a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a></th>
+                <th><a href="vegetables.html" style="text-decoration: none; color: inherit;">Vegetables</a></th>
+                <th><a href="fruits.html" style="text-decoration: none; color: inherit;">Fruits</a></th>
+                <th><a href="seasonal.html" style="text-decoration: none; color: inherit;">Seasonal</a></th>
+                <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
+                <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
+                <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
+                <th><a href="blog.html" style="text-decoration: none; color: inherit;">Blog</a></th>
+                <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
+            </tr>
 
         </table>
-</div>
+    </div>
 
-<div class="about">
-    <div class="category">About FreshMart</div>
-    <p class="info">We're on a mission to make fresh, organic produce accessible to everyone. Founded in<br> 2020, FreshMart connects local farms directly with your kitchen, ensuring the highest<br> quality and freshness in every delivery.</p>
-</div>
+    <div class="about">
+        <div class="category">About FreshMart</div>
+        <p class="info">We're on a mission to make fresh, organic produce accessible to everyone. Founded in<br> 2020,
+            FreshMart connects local farms directly with your kitchen, ensuring the highest<br> quality and freshness in
+            every delivery.</p>
+    </div>
 
-<div class="about-row">
-<div class="about-text">
-    <div class="category1">Our Story</div><br>
-    <p class="info1">FreshMart was born from a simple belief: everyone deserves access to fresh, healthy, and<br> sustainably grown food. Our founder, Sarah Mitchell, was a third-generation organic farmer<br> who saw the disconnect between farms and consumers.<br><br>
-    After years of selling at farmers markets, Sarah realized that many people wanted fresh,<br> organic produce but couldn't always make it to the markest. That's when the idea for<br> FreshMart was born - bringing the farmer's market directly to your doorstep.<br><br>
-    Today, we work with over 50 local farms across the region, supporting sustainable agriculture<br> while providing our customers with the freshest produce possible. Every vegetable and fruit<br> we deliver is picked at peak ripness and delivered within 24 hours.</p>
-</div>
+    <div class="about-row">
+        <div class="about-text">
+            <div class="category1">Our Story</div><br>
+            <p class="info1">FreshMart was born from a simple belief: everyone deserves access to fresh, healthy,
+                and<br> sustainably grown food. Our founder, Sarah Mitchell, was a third-generation organic farmer<br>
+                who saw the disconnect between farms and consumers.<br><br>
+                After years of selling at farmers markets, Sarah realized that many people wanted fresh,<br> organic
+                produce but couldn't always make it to the markest. That's when the idea for<br> FreshMart was born -
+                bringing the farmer's market directly to your doorstep.<br><br>
+                Today, we work with over 50 local farms across the region, supporting sustainable agriculture<br> while
+                providing our customers with the freshest produce possible. Every vegetable and fruit<br> we deliver is
+                picked at peak ripness and delivered within 24 hours.</p>
+        </div>
 
-<div class="about-image">
-    <img src="girl.webp" alt="girl">
-</div>
-</div>
+        <div class="about-image">
+            <img src="girl.webp" alt="girl">
+        </div>
+    </div>
 
-<div class="about">
-<div class="category"> Our Values</div>
-<p class="info">These core principles guide everything we do, from sourcing to delivery</p>
+    <div class="about">
+        <div class="category"> Our Values</div>
+        <p class="info">These core principles guide everything we do, from sourcing to delivery</p>
 
-<div class="Info1">
-    <div class="tag-row">
-    <div class="tag">
-        <p>💯</p>
-        <p class="category2">100% Organic</p>
-        <p class="info">All our produce is certified organic, grown without harmful pesticides or chemicals.</p>
-    </div>
-    <div class="tag">
-        <p>👨‍🌾</p>
-        <p class="category2">Local Farmers</p>
-        <p class="info">We partner directly with local farms to support our community and ensure freshness.</p>
-    </div>
-    <div class="tag">
-        <p>🌟</p>
-        <p class="category2">Premium Quality</p>
-        <p class="info">Every item is hand-selected for quality, freshness, and nutritional value.</p>
-    </div>
-    <div class="tag">
-        <p>💚</p>
-        <p class="category2">Health Focused</p>
-        <p class="info">We're committed to promoting healthy eating and sustainable living practices.</p>
-    </div>
-    <div class="tag">
-        <p>🚚</p>
-        <p class="category2">Fast Delivery</p>
-        <p class="info">Same-day delivery available with our climate-controlled vehicles.</p>
-    </div>
-    <div class="tag">
-        <p>👌</p>
-        <p class="category2">Quality Guarantee</p>
-        <p class="info">100% satisfaction guaranteed or your money back, no questions asked.</p>
-    </div>
-    </div>
-</button>
-</div>
-</div>
-<div class="category3">
-    <table width="100%">
-        <tr>
-            <div class="cat">
-            <th>10,000+</th>
-            <th>50+</th>
-            <th>500+</th>
-            <th>99%</th>
+        <div class="Info1">
+            <div class="tag-row">
+                <div class="tag">
+                    <p>💯</p>
+                    <p class="category2">100% Organic</p>
+                    <p class="info">All our produce is certified organic, grown without harmful pesticides or chemicals.
+                    </p>
+                </div>
+                <div class="tag">
+                    <p>👨‍🌾</p>
+                    <p class="category2">Local Farmers</p>
+                    <p class="info">We partner directly with local farms to support our community and ensure freshness.
+                    </p>
+                </div>
+                <div class="tag">
+                    <p>🌟</p>
+                    <p class="category2">Premium Quality</p>
+                    <p class="info">Every item is hand-selected for quality, freshness, and nutritional value.</p>
+                </div>
+                <div class="tag">
+                    <p>💚</p>
+                    <p class="category2">Health Focused</p>
+                    <p class="info">We're committed to promoting healthy eating and sustainable living practices.</p>
+                </div>
+                <div class="tag">
+                    <p>🚚</p>
+                    <p class="category2">Fast Delivery</p>
+                    <p class="info">Same-day delivery available with our climate-controlled vehicles.</p>
+                </div>
+                <div class="tag">
+                    <p>👌</p>
+                    <p class="category2">Quality Guarantee</p>
+                    <p class="info">100% satisfaction guaranteed or your money back, no questions asked.</p>
+                </div>
             </div>
-        </tr>
-        <tr>
-            <td>Happy Customers</td>
-            <td>Local Farm Partners</td>
-            <td>Fresh Products</td>
-            <td>Customer Satisfaction</td>
-        </tr>
-    </table>
-</div>
-<footer class="footer-section">
-            <table class="footer-table">
-                <tr>
-                    <td rowspan="6" class="footer-logo-call"><img src="Fresh mart.png" alt="logo" class="footer-logo"><br>
-                        <p class="footer-desc">
-                            Your trusted source for fresh, organic vegetables<br> and fruits.Delivered straight from local farms to<br> your doorstep.
-                        </p>
-                        </td>
-                    <td class="footer-head" style="color: black;"> QUICK LINKS</td>
-                    <td class="footer-head" style="color: black;">CUSTOMER SERVICE</td>
-                    <td class="footer-head" style="color: black;">CONTACT US</td>
-                </tr>
-                <tr>
-                    <td>Shop all</td>
-                    <td>My Account</td>
-                    <td>📞 0985688503</td>
-                </tr>
-                <tr>
-                    <td>Vegetables</td>
-                    <td>Order History</td>
-                    <td>📧 hello@freshmart.com</td>
-                </tr>
-                <tr>
-                    <td>Fruits</td>
-                    <td>About Us</td>
-                    <td>📍 123 Farm Street Fresh Valley, CA 90210</td>
-                </tr>
-                <tr>
-                    <td>Organic</td>
-                    <td>Contact</td>
-                </tr>
-                <tr>
-                    <td>Seasonal</td>
-                    <td>Blog</td>
-                </tr>
-            </table>
-        </footer>
+            </button>
+        </div>
+    </div>
+    <div class="category3">
+        <table width="100%">
+            <tr>
+                <div class="cat">
+                    <th>10,000+</th>
+                    <th>50+</th>
+                    <th>500+</th>
+                    <th>99%</th>
+                </div>
+            </tr>
+            <tr>
+                <td>Happy Customers</td>
+                <td>Local Farm Partners</td>
+                <td>Fresh Products</td>
+                <td>Customer Satisfaction</td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer-section">
+        <table class="footer-table">
+            <tr>
+                <td rowspan="6" class="footer-logo-call"><img src="Fresh mart.png" alt="logo" class="footer-logo"><br>
+                    <p class="footer-desc">
+                        Your trusted source for fresh, organic vegetables<br> and fruits.Delivered straight from local
+                        farms to<br> your doorstep.
+                    </p>
+                </td>
+                <td class="footer-head" style="color: black;"> QUICK LINKS</td>
+                <td class="footer-head" style="color: black;">CUSTOMER SERVICE</td>
+                <td class="footer-head" style="color: black;">CONTACT US</td>
+            </tr>
+            <tr>
+                <td>Shop all</td>
+                <td>My Account</td>
+                <td>📞 0985688503</td>
+            </tr>
+            <tr>
+                <td>Vegetables</td>
+                <td>Order History</td>
+                <td>📧 hello@freshmart.com</td>
+            </tr>
+            <tr>
+                <td>Fruits</td>
+                <td>About Us</td>
+                <td>📍 123 Farm Street Fresh Valley, CA 90210</td>
+            </tr>
+            <tr>
+                <td>Organic</td>
+                <td>Contact</td>
+            </tr>
+            <tr>
+                <td>Seasonal</td>
+                <td>Blog</td>
+            </tr>
+        </table>
+    </footer>
 </body>
+
 </html>

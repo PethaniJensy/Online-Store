@@ -11,6 +11,7 @@
         body {
             background-color: white;
             font-size: 15px;
+            font-family: Arial, sans-serif;
         }
 
         .Heading img {
@@ -29,65 +30,24 @@
             padding: 20px 20px;
             cursor: pointer;
             /*When we put cursor on it then cursor changes it type*/
-            font-weight: 100;
+            font-weight: 200;
             /*Gives thickness of the font*/
             transition: color 0.3s;
             /*Time duration to change the color of font from black to green*/
+            font-size: 13px;
         }
 
         th:hover {
             /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
-            color: rgb(3, 99, 107);
+            color: rgb(0, 0, 0);
             /*colour of the element when mouse is placed on it*/
             transform: scale(1.09);
             /*how up the element will lift*/
         }
 
-        .signup-container {
-            max-width: 450px;
-            margin: 60px auto;
-            background-color: #f3fbf1;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .signup-container h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            color: rgb(83, 124, 83);
-        }
-
-        .signup-container input {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-
-        .signup-container button {
-            width: 100%;
-            padding: 12px;
-            background-color: rgb(151, 197, 149);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-
-        .signup-container button:hover {
-            background-color: rgb(132, 177, 130);
-        }
-
         .footer-section {
             background-color: #e4f3e1;
             padding: 40px 60px;
-            font-family: Arial, sans-serif;
             color: #333;
         }
 
@@ -108,7 +68,6 @@
         .footer-head {
             font-weight: bold;
             padding-bottom: 10px;
-            color: black;
         }
 
         .footer-logo {
@@ -119,58 +78,35 @@
         .footer-desc {
             font-size: 13px;
             line-height: 1.6;
-            color: #598257;
+            color: #2e8b29;
         }
 
-        .signup-container {
-            max-width: 450px;
-            margin: 60px auto;
-            background-color: #f3fbf1;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        .top {
+            background-color: rgb(235, 248, 235);
         }
 
-        .signup-container h2 {
+        .top h1{
+            padding-top: 70px;
+            margin-top: 0px;
             text-align: center;
-            margin-bottom: 25px;
-            color: rgb(83, 124, 83);
+            font-size: 40px;
         }
 
-        .signup-container input {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-
-        .signup-container button {
-            width: 100%;
-            padding: 12px;
-            background-color: rgb(151, 197, 149);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-        }
-
-        .signup-container button:hover {
-            background-color: rgb(132, 177, 130);
+        .top p{
+            text-align: center;
+            color: rgb(181, 208, 181);
+            padding-bottom: 100px;
         }
     </style>
+
 </head>
 
 <body>
-
     <div class="sticky-header">
         <table width="100%">
+
             <tr>
-                <th colspan="6">
+                <th colspan="6"> <!--Merge the 6 columns of row 1-->
                     <div class="Heading">
                         <img src="Fresh mart.png" alt="logo">
                     </div>
@@ -185,20 +121,13 @@
                 <th><a href="blog.html" style="text-decoration: none; color: inherit;">Blog</a></th>
                 <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
             </tr>
+
         </table>
     </div>
 
-    <!--Signup Form -->
-    <div class="signup-container">
-        <h2>Create Your Account</h2>
-        <form action="#" method="post">
-            <input type="text" name="fullname" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-            <button type="submit">Sign Up</button>
-        </form>
+    <div class="top">
+        <h1>Fresh Insights</h1>
+        <p>Discover healthy recipes, nutrition tips, and sustainable living advice from<br> our experts.</p>
     </div>
 
     <footer class="footer-section">
@@ -206,13 +135,13 @@
             <tr>
                 <td rowspan="6" class="footer-logo-call"><img src="Fresh mart.png" alt="logo" class="footer-logo"><br>
                     <p class="footer-desc">
-                        Your trusted source for fresh, organic vegetables<br> and fruits. Delivered straight from local
+                        Your trusted source for fresh, organic vegetables<br> and fruits.Delivered straight from local
                         farms to<br> your doorstep.
                     </p>
                 </td>
-                <td class="footer-head">QUICK LINKS</td>
-                <td class="footer-head">CUSTOMER SERVICE</td>
-                <td class="footer-head">CONTACT US</td>
+                <td class="footer-head" style="color: black;"> QUICK LINKS</td>
+                <td class="footer-head" style="color: black;">CUSTOMER SERVICE</td>
+                <td class="footer-head" style="color: black;">CONTACT US</td>
             </tr>
             <tr>
                 <td>Shop all</td>
@@ -239,7 +168,6 @@
             </tr>
         </table>
     </footer>
-
 </body>
 
 </html>

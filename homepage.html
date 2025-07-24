@@ -12,6 +12,7 @@
         body{
             background-color: white;
             font-size :15px;
+            font-family: Arial, sans-serif;
         }
 
         .Heading img{
@@ -29,19 +30,19 @@
         th{
             padding: 20px 20px;
             cursor: pointer; /*When we put cursor on it then cursor changes it type*/
-            font-weight: 100; /*Gives thickness of the font*/
+            font-weight: 200; /*Gives thickness of the font*/
             transition: color 0.3s; /*Time duration to change the color of font from black to green*/
+            font-size: 13px;
         }
 
         th:hover{   /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
-            color: rgb(3, 99, 107); /*colour of the element when mouse is placed on it*/
+            color: rgb(0, 0, 0); /*colour of the element when mouse is placed on it*/
             transform: scale(1.09); /*how up the element will lift*/
         }
 
         .Info{
             background-color: rgb(224, 239, 224);
             padding:120px 0px 130px 120px;
-            font-family: Arial, sans-serif; /*Which type of font is used here*/
             position:relative;
             z-index: 1;
         }
@@ -72,7 +73,7 @@
         .info-text{
             font-size: 55px;
             font-weight: 700;
-            color: #050505b9;
+            color: #050505;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0,.85); /*How far the shadow goes left/right How far the shadow goes up/down How blurry the shadow should be The shadow’s color*/
         }
 
@@ -85,7 +86,6 @@
         .Info1{
             background-color: rgba(151, 197, 149, 0.349);
             padding: 40px 0px 50px 120px;
-            font-family: Arial, sans-serif;
         }
 
         .tag-row{
@@ -98,10 +98,9 @@
             display:flex;
             flex-direction: column; /*defines the direction in which flex items are placed inside a flex container(tag)*/
             align-items: center; /*align item inside the tag at center*/
-            background-color: #edf2ed;
+            background-color: #f9f9f9;
             padding: 20px 25px; /*padding inside the tag*/
             border-radius: 20px; /*gives curves to the tag*/
-            font-family: Arial, sans-serif;
             box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1); /*How far the shadow goes left/right How far the shadow goes up/down How soft the shadow’s edges are The shadow’s color*/
             transition: transform 0.2s; /*animated after 0.2 second*/
             width: 120px;
@@ -110,7 +109,7 @@
 
         .tag:hover{
             transform: scale(1.05);
-            background-color: #dee6e0;
+            background-color: #ffffff;
         }
 
         .icon{
@@ -121,13 +120,13 @@
         .text{
             font-size: 16px;
             text-align: center;
+            font-weight: 500;
         }
 
         .category{
             text-align: center;
             font-weight: 600;
             font-size: 40px;
-            font-family: Arial, sans-serif;
             background-color: rgb(248, 254, 248);
             padding:50px 0px 50px 0px;
         }
@@ -146,13 +145,13 @@
             border-radius: 12px;
             box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
             padding: 16px;
-            width: 400px;
+            width: 350px;
             text-align: center;
             transition: transform 0.3s;
         }
 
         .product img{
-            width:400px;
+            width:350px;
             height:290px;
             object-fit: cover;
             border-radius: 12px;
@@ -161,7 +160,6 @@
         .product p{
             font-size: 20px;
             font-weight: 500;
-            font-family: Arial, sans-serif;
         }
 
         .product button{
@@ -224,7 +222,6 @@
             font-size:15px;
             text-align: left;
             font-weight: 500;
-            font-family: Arial,sans-serif;
         }
 
         .product1 button{
@@ -285,7 +282,6 @@
         .review{
             font-size: 14px;
             font-weight: 100;
-            font-family: Arial,sans-serif;
             color:rgba(151, 197, 149, 0.929);
             margin-top: 15px;
             justify-content:space-between;
@@ -293,7 +289,6 @@
 
         .name{
             font-size: 14px;
-            font-family: Arial,sans-serif;
             font-weight: 600;
             color: rgba(0, 0, 0, 0.725); 
         }
@@ -317,7 +312,6 @@
         .footer-section {
             background-color: #e4f3e1;
             padding: 40px 60px;
-            font-family: Arial, sans-serif;
             color: #333;
         }
 
@@ -372,6 +366,7 @@
         <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
         <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
         <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
+        <th><a href="blog.html" style="text-decoration: none; color: inherit;">Blog</a></th>
         <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
         </tr>
 
@@ -382,7 +377,7 @@
         <div class="info-content">
             <div class="info-text">
         Fresh & Organic
-        <p style="color: rgba(37, 132, 21, 0.749); margin:0;">Delivered Daily</p><br> <!--Margin: Space between the Fresh & Organic and the Delivered Daily-->
+        <p style="color: rgb(28, 130, 9); margin:0;">Delivered Daily</p><br> <!--Margin: Space between the Fresh & Organic and the Delivered Daily-->
         <p style="font-size: 20px; margin-top:1px;">Farm-fresh vegetables and fruits delivered straight to your door. 100%<br>organic, locally sourced, and always fresh.</p>
     </div>
     </div>
@@ -532,4 +527,9 @@
         </footer>
     </body>
 </html>
+
+
+
+
+
 

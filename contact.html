@@ -1,102 +1,107 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <title>
-            organik.com
-        </title>
+    <title>
+        organik.com
+    </title>
 
-        <style>
-
-        body{
+    <style>
+        body {
             background-color: white;
-            font-size :15px;
+            font-size: 15px;
         }
 
-        .Heading img{
-            width: 71px;  
+        .Heading img {
+            width: 71px;
         }
 
-        .sticky-header{
-            position:sticky;
-            top:0;
-            z-index:1000;
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
             background-color: rgb(255, 255, 255);
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        th{
+        th {
             padding: 20px 20px;
-            cursor: pointer; /*When we put cursor on it then cursor changes it type*/
-            font-weight: 100; /*Gives thickness of the font*/
-            transition: color 0.3s; /*Time duration to change the color of font from black to green*/
+            cursor: pointer;
+            /*When we put cursor on it then cursor changes it type*/
+            font-weight: 100;
+            /*Gives thickness of the font*/
+            transition: color 0.3s;
+            /*Time duration to change the color of font from black to green*/
         }
 
-         th:hover{   /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
-            color: rgb(3, 99, 107); /*colour of the element when mouse is placed on it*/
-            transform: scale(1.09); /*how up the element will lift*/
+        th:hover {
+            /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
+            color: rgb(3, 99, 107);
+            /*colour of the element when mouse is placed on it*/
+            transform: scale(1.09);
+            /*how up the element will lift*/
         }
 
         .footer-section {
-        background-color: #e4f3e1;
-        padding: 40px 60px;
-        font-family: Arial, sans-serif;
-        color: #333;
+            background-color: #e4f3e1;
+            padding: 40px 60px;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
 
         .footer-table {
-        width: 100%;
-        table-layout: fixed;
-        border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
         }
 
         .footer-table td {
-        vertical-align: top;
-        padding: 10px;
-        font-size: 14px;
-        width: 25%;
-        color: #598257;
+            vertical-align: top;
+            padding: 10px;
+            font-size: 14px;
+            width: 25%;
+            color: #598257;
         }
 
         .footer-head {
-        font-weight: bold;
-        padding-bottom: 10px;
+            font-weight: bold;
+            padding-bottom: 10px;
         }
 
         .footer-logo {
-        width: 80px;
-        margin-bottom: 10px;
+            width: 80px;
+            margin-bottom: 10px;
         }
 
         .footer-desc {
-        font-size: 13px;
-        line-height: 1.6;
-        color: #598257;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #598257;
         }
 
-        .category{
+        .category {
             font-size: 45px;
-            font-family: Arial,sans-serif;
+            font-family: Arial, sans-serif;
             font-weight: 700;
             text-align: center;
         }
 
-        .about{
+        .about {
             font-size: 15px;
-            color:rgb(181, 221, 181);
+            color: rgb(181, 221, 181);
             text-align: center;
         }
 
-        .whole{
-            background-color:rgba(231, 247, 231, 0.4);
-            padding:55px;
+        .whole {
+            background-color: rgba(231, 247, 231, 0.4);
+            padding: 55px;
         }
 
-        .box{
+        .box {
             border-radius: 10px;
             background-color: rgb(243, 251, 242);
-            padding:70px;
+            padding: 70px;
             margin-top: 70px;
             margin-bottom: 70px;
             margin-left: 60px;
@@ -104,276 +109,293 @@
             border: 2px solid rgb(236, 246, 237);
         }
 
-        .info{
+        .info {
             font-size: 23px;
             font-weight: 500;
-            font-family:Arial,sans-serif;
+            font-family: Arial, sans-serif;
             margin-bottom: 30px;
             margin-top: -20px;
         }
 
         .name-fields {
-  display: flex;
-  gap: 60px; /* spacing between first and last name */
-  margin-bottom: 15px;
-}
+            display: flex;
+            gap: 60px;
+            /* spacing between first and last name */
+            margin-bottom: 15px;
+        }
 
-.field {
-  flex: 1; /* both inputs take equal space */
-}
+        .field {
+            flex: 1;
+            /* both inputs take equal space */
+        }
 
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
-}
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 331px;
-  font-size: 14px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 331px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-button:hover {
-  background-color: #45a049;
-}
+        button:hover {
+            background-color: #45a049;
+        }
 
-label{
-    font-weight: 500;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-}
+        label {
+            font-weight: 500;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
 
-.side{
-    display:flex;
-    gap:1px;
-}
+        .side {
+            display: flex;
+            gap: 1px;
+        }
 
-.contact-info{
-    border-radius: 10px;
-    border: 2px solid rgb(236, 246, 237);
-    background-color: rgb(243, 251, 242);
-    padding:190px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
+        .contact-info {
+            border-radius: 10px;
+            border: 2px solid rgb(236, 246, 237);
+            background-color: rgb(243, 251, 242);
+            padding: 190px;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
 
-.contact-info h2{
-    margin-top: -160px;
-    margin-left: -160px;
-    font-family: Arial, sans-serif;
-    font-weight: 500;
-}
+        .contact-info h2 {
+            margin-top: -160px;
+            margin-left: -160px;
+            font-family: Arial, sans-serif;
+            font-weight: 500;
+        }
 
-.contact-info p{
-    font-size: 18px;
-    margin-left: -160px;
-}
+        .contact-info p {
+            font-size: 18px;
+            margin-left: -160px;
+        }
 
-.info1{
-    font-size: 11px;
-    margin-left: -140px;
-    color: rgb(64, 127, 73);
-}
+        .info1 {
+            font-size: 11px;
+            margin-left: -140px;
+            color: rgb(64, 127, 73);
+        }
 
-.que{
-    font-size: 35px;
-    text-align: center;
-    padding-bottom: 30px;
-    font-family: Arial,sans-serif;
-    font-weight: 600;
-}
+        .que {
+            font-size: 35px;
+            text-align: center;
+            padding-bottom: 30px;
+            font-family: Arial, sans-serif;
+            font-weight: 600;
+        }
 
-.info2{
-    font-size: 17px;
-    margin-left: -140px;
-    color: rgb(64, 127, 73);
-    text-align: center;
-    font-weight: 100;
-    margin-left: 10px;
-}
+        .info2 {
+            font-size: 17px;
+            margin-left: -140px;
+            color: rgb(64, 127, 73);
+            text-align: center;
+            font-weight: 100;
+            margin-left: 10px;
+        }
 
-.box2{
-    border-radius: 10px;
-    background-color: rgb(249, 255, 249);
-    padding:10px 20px 15px 20px;
-    border:2px solid rgb(239, 250, 239);
-    margin-bottom: 10px;
-    max-width: 500px;
-    width:100%;
-}
+        .box2 {
+            border-radius: 10px;
+            background-color: rgb(249, 255, 249);
+            padding: 10px 20px 15px 20px;
+            border: 2px solid rgb(239, 250, 239);
+            margin-bottom: 10px;
+            max-width: 500px;
+            width: 100%;
+        }
 
-.side1{
-    display:flex;
-    gap:20px;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+        .side1 {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
 
-.box2 p{
-    font-size: 19px;
-    font-family: arial,sans-serif;
-}
+        .box2 p {
+            font-size: 19px;
+            font-family: arial, sans-serif;
+        }
 
-p.info3{
-    font-size: 14px;
-    color: rgb(177, 194, 179);
-}
+        p.info3 {
+            font-size: 14px;
+            color: rgb(177, 194, 179);
+        }
+    </style>
 
-</style>
+</head>
 
-    </head>
-
-    <body>
-        <div class="sticky-header">
+<body>
+    <div class="sticky-header">
         <table width="100%">
 
             <tr>
                 <th colspan="6"> <!--Merge the 6 columns of row 1-->
-        <div class="Heading">
-        <img src="Fresh mart.png" alt="logo">
-        </div>
-        </th>
-        <th><a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a></th>
-        <th><a href="vegetables.html" style="text-decoration: none; color: inherit;">Vegetables</a></th>
-        <th><a href="fruits.html" style="text-decoration: none; color: inherit;">Fruits</a></th>
-        <th><a href="seasonal.html" style="text-decoration: none; color: inherit;">Seasonal</a></th>
-        <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
-        <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
-        <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
-        <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
-        </tr>
+                    <div class="Heading">
+                        <img src="Fresh mart.png" alt="logo">
+                    </div>
+                </th>
+                <th><a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a></th>
+                <th><a href="vegetables.html" style="text-decoration: none; color: inherit;">Vegetables</a></th>
+                <th><a href="fruits.html" style="text-decoration: none; color: inherit;">Fruits</a></th>
+                <th><a href="seasonal.html" style="text-decoration: none; color: inherit;">Seasonal</a></th>
+                <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
+                <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
+                <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
+                <th><a href="blog.html" style="text-decoration: none; color: inherit;">Blog</a></th>
+                <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
+            </tr>
 
         </table>
-</div>
+    </div>
 
-<div class="whole">
-<div class="category"> Contact Us</div>
-    <p class="about">Have questions? We'd love to hear from you. Get in touch with our team.</p>
+    <div class="whole">
+        <div class="category"> Contact Us</div>
+        <p class="about">Have questions? We'd love to hear from you. Get in touch with our team.</p>
     </div>
 
     <table>
-        
-    </table>
-      <div class="side">
-      <div class="box">
-        <form class="box1">
-          <div class="info">Send us a Message</div>
 
-    <div class="name-fields">
-      <div class="field">
-        <label for="fname">First Name*</label>
-        <input type="text" id="fname" name="fname" placeholder="Pethani Jensy" required>
-      </div>
-      <div class="field">
-        <label for="lname">Last Name*</label>
-        <input type="text" id="lname" name="lname" placeholder="Milanbhai" required>
-      </div>
+    </table>
+    <div class="side">
+        <div class="box">
+            <form class="box1">
+                <div class="info">Send us a Message</div>
+
+                <div class="name-fields">
+                    <div class="field">
+                        <label for="fname">First Name*</label>
+                        <input type="text" id="fname" name="fname" placeholder="Pethani Jensy" required>
+                    </div>
+                    <div class="field">
+                        <label for="lname">Last Name*</label>
+                        <input type="text" id="lname" name="lname" placeholder="Milanbhai" required>
+                    </div>
+                </div>
+
+                <label for="email">Email Address*</label><br>
+                <input type="email" id="email" name="email" placeholder="1234@gmail.com" required><br>
+
+                <label for="phone number">Phone Number</label><br>
+                <input type="phone number" id="phone number" name="phone number" placeholder="2387569036" required><br>
+
+                <label for="subject">Subject*</label><br>
+                <input type="subject" id="subject" name="subject" required><br>
+
+                <label for="message">Message*</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>📞Phone</p>
+            <div class="info1">90463186<br>Customer Service<br>Mon-Fri 8AM-8PM, Sat-Sun 9AM-6PM</div>
+            <p>📧Email</p>
+            <div class="info1">hello@freshmart.com<br>General Inquiries<br>We'll respond within 24 hours</div>
+            <p>📍Address</p>
+            <div class="info1">123 Farm Street<br>Fresh Valley, CA 90210<br>visit our warehouse & offices</div>
+            <p>🕐Business Hours</p>
+            <div class="info1">Mon-Fri: 8AM-8PM<br>Sat-Sun: 9AM-6PM<br>customer service availability</div>
+        </div>
     </div>
 
-    <label for="email">Email Address*</label><br>
-    <input type="email" id="email" name="email" placeholder="1234@gmail.com" required><br>
+    <div class="que">
+        Frequently Asked Questions<br><br>
+        <div class="info2">Quick answers to common questions</div>
+    </div>
 
-    <label for="phone number">Phone Number</label><br>
-    <input type="phone number" id="phone number" name="phone number" placeholder="2387569036" required><br>
+    <div class="side1">
+        <div class="box2">
+            <b>
+                <p>What are your delivery areas?</p>
+            </b>
+            <p class="info3">We currently deliver to most areas within 25 miles of our warehouse. Enter your ZIP<br>
+                code at checkout to check availability.</p>
+        </div>
 
-    <label for="subject">Subject*</label><br>
-    <input type="subject" id="subject" name="subject"  required><br>
+        <div class="box2">
+            <b>
+                <p>How do you ensure freshness?</p>
+            </b>
+            <p class="info3">All produce is harvested within 24-48 hours of delivery and stored in
+                climate-<br>controlled facilities. We use insulated packaging to maintain optimal temperature.</p>
+        </div>
+    </div>
 
-    <label for="message">Message*</label><br>
-    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <div class="side1">
+        <div class="box2">
+            <b>
+                <p>Can I modify or cancel my order?</p>
+            </b>
+            <p class="info3">Orders can be modify or cancelled up to 2 hours before your scheduled delivery<br>time.
+                Contact customer service for assistance.</p>
+        </div>
 
-    <button type="submit">Send Message</button>
-  </form>
-</div>
+        <div class="box2">
+            <b>
+                <p>Do you offer organic certification?</p>
+            </b>
+            <p class="info3">Yes! All products marked as organic are certified by USDA-approved
+                agencies.<br>Certificates are available upon request.</p>
+        </div>
+    </div>
 
-<div class="contact-info">
-    <h2>Get in Touch</h2>
-    <p>📞Phone</p>
-    <div class="info1">90463186<br>Customer Service<br>Mon-Fri 8AM-8PM, Sat-Sun 9AM-6PM</div>
-    <p>📧Email</p>
-    <div class="info1">hello@freshmart.com<br>General Inquiries<br>We'll respond within 24 hours</div>
-    <p>📍Address</p>
-    <div class="info1">123 Farm Street<br>Fresh Valley, CA 90210<br>visit our warehouse & offices</div>
-    <p>🕐Business Hours</p>
-    <div class="info1">Mon-Fri: 8AM-8PM<br>Sat-Sun: 9AM-6PM<br>customer service availability</div>
-</div>
-</div>
-
-<div class="que">
-    Frequently Asked Questions<br><br>
-    <div class="info2">Quick answers to common questions</div>
-</div>
-
-<div class="side1">
-<div class="box2">
-    <b><p>What are your delivery areas?</p></b>
-    <p class="info3">We currently deliver to most areas within 25 miles of our warehouse. Enter your ZIP<br> code at checkout to check availability.</p>
-</div>
-
-<div class="box2">
-    <b><p>How do you ensure freshness?</p></b>
-    <p class="info3">All produce is harvested within 24-48 hours of delivery and stored in climate-<br>controlled facilities. We use insulated packaging to maintain optimal temperature.</p>
-</div>
-</div>
-
-<div class="side1">
-<div class="box2">
-    <b><p>Can I modify or cancel my order?</p></b>
-    <p class="info3">Orders can be modify or cancelled up to 2 hours before your scheduled delivery<br>time. Contact customer service for assistance.</p>
-</div>
-
-<div class="box2">
-    <b><p>Do you offer organic certification?</p></b>
-    <p class="info3">Yes! All products marked as organic are certified by USDA-approved agencies.<br>Certificates are available upon request.</p>
-</div>
-</div>
-
-<footer class="footer-section">
-            <table class="footer-table">
-                <tr>
-                    <td rowspan="6" class="footer-logo-call"><img src="Fresh mart.png" alt="logo" class="footer-logo"><br>
-                        <p class="footer-desc">
-                            Your trusted source for fresh, organic vegetables<br> and fruits.Delivered straight from local farms to<br> your doorstep.
-                        </p>
-                        </td>
-                    <td class="footer-head" style="color: black;"> QUICK LINKS</td>
-                    <td class="footer-head" style="color: black;">CUSTOMER SERVICE</td>
-                    <td class="footer-head" style="color: black;">CONTACT US</td>
-                </tr>
-                <tr>
-                    <td>Shop all</td>
-                    <td>My Account</td>
-                    <td>📞 0985688503</td>
-                </tr>
-                <tr>
-                    <td>Vegetables</td>
-                    <td>Order History</td>
-                    <td>📧 hello@freshmart.com</td>
-                </tr>
-                <tr>
-                    <td>Fruits</td>
-                    <td>About Us</td>
-                    <td>📍 123 Farm Street Fresh Valley, CA 90210</td>
-                </tr>
-                <tr>
-                    <td>Organic</td>
-                    <td>Contact</td>
-                </tr>
-                <tr>
-                    <td>Seasonal</td>
-                    <td>Blog</td>
-                </tr>
-            </table>
-        </footer>
+    <footer class="footer-section">
+        <table class="footer-table">
+            <tr>
+                <td rowspan="6" class="footer-logo-call"><img src="Fresh mart.png" alt="logo" class="footer-logo"><br>
+                    <p class="footer-desc">
+                        Your trusted source for fresh, organic vegetables<br> and fruits.Delivered straight from local
+                        farms to<br> your doorstep.
+                    </p>
+                </td>
+                <td class="footer-head" style="color: black;"> QUICK LINKS</td>
+                <td class="footer-head" style="color: black;">CUSTOMER SERVICE</td>
+                <td class="footer-head" style="color: black;">CONTACT US</td>
+            </tr>
+            <tr>
+                <td>Shop all</td>
+                <td>My Account</td>
+                <td>📞 0985688503</td>
+            </tr>
+            <tr>
+                <td>Vegetables</td>
+                <td>Order History</td>
+                <td>📧 hello@freshmart.com</td>
+            </tr>
+            <tr>
+                <td>Fruits</td>
+                <td>About Us</td>
+                <td>📍 123 Farm Street Fresh Valley, CA 90210</td>
+            </tr>
+            <tr>
+                <td>Organic</td>
+                <td>Contact</td>
+            </tr>
+            <tr>
+                <td>Seasonal</td>
+                <td>Blog</td>
+            </tr>
+        </table>
+    </footer>
 </body>
+
 </html>

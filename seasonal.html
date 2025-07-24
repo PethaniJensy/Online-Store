@@ -120,7 +120,7 @@
             padding-right: 2rem;
         }
 
-        aside h3{
+        aside h4 {
             margin-top: 1.5rem;
         }
 
@@ -149,7 +149,7 @@
 
         .product-card img {
             width: 100%;
-            height:180px;
+            height: 180px;
             object-fit: cover;
             border-radius: 8px;
             margin-top: 25px;
@@ -181,39 +181,39 @@
             font-family: arial, sans-serif;
         }
 
-        .rating{
-            font-size:16px;
-            padding:0px 250px 0px 0px;
+        .rating {
+            font-size: 16px;
+            padding: 0px 250px 0px 0px;
             color: rgba(151, 197, 149, 0.929);
             font-weight: 100;
         }
 
-        .price{
-            font-size:16px;
+        .price {
+            font-size: 16px;
             text-align: left;
-            color:rgb(94, 169, 94);
+            color: rgb(94, 169, 94);
             margin-top: 10px;
         }
 
-        .products button{
+        .products button {
             border-radius: 9px;
             border-color: transparent;
-            background-color:rgb(189, 220, 189);
+            background-color: rgb(189, 220, 189);
             align-items: center;
             padding: 10px 80px 10px 80px;
             margin-top: 20px;
         }
 
-        .product-card:hover{
+        .product-card:hover {
             transform: scale(1.03);
             box-shadow: 0px 10px 10px rgb(206, 204, 204);
         }
 
-        .products button:hover{
+        .products button:hover {
             transform: scale(1.03);
-            background-color: rdb(229,239,229);
+            background-color: rdb(229, 239, 229);
             box-shadow: 0px 5px 5px rgb(229, 228, 228);
-            
+
         }
     </style>
 
@@ -236,6 +236,7 @@
                 <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
                 <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
                 <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
+                <th><a href="blog.html" style="text-decoration: none; color: inherit;">Blog</a></th>
                 <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
             </tr>
 
@@ -248,8 +249,15 @@
 
         <main>
             <aside>
-                <h3>Search Products</h3>
-                <input type="text" placeholder="Search...">
+
+                <h4>Seasons</h4>
+                <label><input type="radio" name="category" checked> Summer</label>
+                <label><input type="radio" name="category"> Winter</label>
+                <label><input type="radio" name="category"> Monsoon</label>
+
+                <h4>Type</h4>
+                <label><input type="radio" name="category" checked> Fruits</label>
+                <label><input type="radio" name="category"> Vegetables</label>
 
                 <h4>Price Range</h4>
                 <label><input type="radio" name="price" checked> Under $5</label>
@@ -296,7 +304,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="grapes.jpg" alt="Grapes">
                     <div class="details">
@@ -308,7 +316,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="watermelon.jpg" alt="Watermelon">
                     <div class="details">
@@ -320,7 +328,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="strawberries.jpg" alt="Strawberries">
                     <div class="details">
@@ -332,7 +340,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="mango.jpg" alt="Mango">
                     <div class="details">
@@ -344,7 +352,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="pineapple.webp" alt="Pineapple">
                     <div class="details">
@@ -356,7 +364,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="peach.webp" alt="Peach">
                     <div class="details">
@@ -368,7 +376,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="pear.webp" alt="Pear">
                     <div class="details">
@@ -380,7 +388,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="guava.jpg" alt="Guava">
                     <div class="details">
@@ -392,7 +400,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="papaya.webp" alt="Papaya">
                     <div class="details">
@@ -404,7 +412,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="pomegranate.webp" alt="Pomegranate">
                     <div class="details">
@@ -416,7 +424,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="jamun.webp" alt="Jamun">
                     <div class="details">
@@ -428,7 +436,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="coconut.jpg" alt="Coconut">
                     <div class="details">
@@ -440,7 +448,7 @@
                     </div>
                 </div>
 
-                 <div class="product-card">
+                <div class="product-card">
                     <span class="badge">Organic</span>
                     <img src="litchi.webp" alt="Litchi">
                     <div class="details">
@@ -494,6 +502,246 @@
                     <div class="details">
                         <p class="category">FRUITS</p>
                         <h3>Plum</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="tomato.jpg" alt="Tomato">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Fresh Organic Tomatoes</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="potato.jpg" alt="Potato">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Potato</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="onion.jpg" alt="Onion">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Onion</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="carrot.webp" alt="Carrot">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Carrot</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="spinach.jpg" alt="Spinach">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Spinach</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="cabbage.jpg" alt="Cabbage">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Cabbage</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="cauliflower.jpg" alt="Cauliflower">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Cauliflower</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="eggplant.webp" alt="Bringal">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>EggPLant (Bringal)</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="lettuce.jpg" alt="Lettuce">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Lettuce</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="raddish.jpg" alt="Raddish">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Raddish</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="okra.webp" alt="Ladyfinger">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Okra (Lady Finger)</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="bitter gourd.webp" alt="Bitter Gourd">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Bitter gourd</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="bottle gourd.webp" alt="Bottle Gourd">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Bottle gourd</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="drum stick.jpg" alt="Drumstick">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Drumstick</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="beetroot.jpg" alt="Beetroot">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Beetroot</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="ridge gourd.jpeg" alt="Ridge gourd">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Ridge gourd</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="cucumber.jpg" alt="Cucumber">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Cucumber</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="peas.webp" alt="Peas">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Peas</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="pointed gourd.webp" alt="Pointed gourd">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Pointed gourd</h3>
+                        <div class="rating">★★★★☆(4.3)</div>
+                        <div class="price">₹39</div>
+                        <button>Shop now -></button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">Organic</span>
+                    <img src="red bell pepper.jpg" alt="Red bell pepper">
+                    <div class="details">
+                        <p class="category">VEGETABLES</p>
+                        <h3>Red bell pepper</h3>
                         <div class="rating">★★★★☆(4.3)</div>
                         <div class="price">₹39</div>
                         <button>Shop now -></button>
