@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 
 <head>
@@ -106,7 +106,7 @@
         <table width="100%">
 
             <tr>
-                <th colspan="6"> <!--Merge the 6 columns of row 1-->
+                <th colspan="6"> <!--Merge the 6 columns of row 1
                     <div class="Heading">
                         <img src="Fresh mart.png" alt="logo">
                     </div>
@@ -168,6 +168,247 @@
             </tr>
         </table>
     </footer>
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog - organik.com</title>
+    <style>
+        body {
+            background-color: white;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        .Heading img {
+            width: 71px;
+        }
+
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            padding: 20px 20px;
+            cursor: pointer;
+            /*When we put cursor on it then cursor changes it type*/
+            font-weight: 200;
+            /*Gives thickness of the font*/
+            transition: color 0.3s;
+            /*Time duration to change the color of font from black to green*/
+            font-size: 13px;
+        }
+
+        th:hover {
+            /* is a pseudo class that applies styles when the user places the mouse cursor over an element*/
+            color: rgb(0, 0, 0);
+            /*colour of the element when mouse is placed on it*/
+            transform: scale(1.09);
+            /*how up the element will lift*/
+        }
+
+
+        .blog-header {
+            background-color: #e4f3e1;
+            padding: 60px 20px 20px;
+            text-align: center;
+        }
+
+        .blog-header h1 {
+            font-size: 36px;
+            color: #3b763f;
+        }
+
+        .blog-header p {
+            color: #7ca87c;
+            font-size: 16px;
+        }
+
+        .blog-section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .blog-post {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            color: #2e8b29;
+        }
+
+        .blog-post p {
+            font-size: 15px;
+            color: #555;
+        }
+
+        .blog-post .date {
+            font-size: 13px;
+            color: gray;
+        }
+
+        .footer-section {
+            background-color: #e4f3e1;
+            padding: 40px 60px;
+            color: #333;
+        }
+
+        .footer-table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        .footer-table td {
+            vertical-align: top;
+            padding: 10px;
+            font-size: 14px;
+            width: 25%;
+            color: #598257;
+        }
+
+        .footer-head {
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        .footer-logo {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .footer-desc {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #2e8b29;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Header Navigation -->
+    <div class="sticky-header">
+        <table width="100%">
+
+            <tr>
+                <th colspan="6"> <!--Merge the 6 columns of row 1-->
+                    <div class="Heading">
+                        <img src="Fresh mart.png" alt="logo">
+                    </div>
+                </th>
+                <th><a href="homepage.html" style="text-decoration: none; color: inherit;">Home</a></th>
+                <th><a href="vegetables.html" style="text-decoration: none; color: inherit;">Vegetables</a></th>
+                <th><a href="fruits.html" style="text-decoration: none; color: inherit;">Fruits</a></th>
+                <th><a href="seasonal.html" style="text-decoration: none; color: inherit;">Seasonal</a></th>
+                <th><a href="exotic.html" style="text-decoration: none; color: inherit;">Exotic</a></th>
+                <th><a href="about.html" style="text-decoration: none; color: inherit;">About</a></th>
+                <th><a href="contact.html" style="text-decoration: none; color: inherit;">Contact</a></th>
+                <th><a href="blog.html" style="text-decoration: none; color: inherit;">Blog</a></th>
+                <th><a href="signup.html" style="text-decoration: none; color: inherit;">Sign up</a></th>
+                <th><a href="cart.html" style="text-decoration: none; color: inherit;">Cart</a></th>
+            </tr>
+
+        </table>
+
+    <div class="blog-header">
+        <h1>Our Fresh Blog</h1>
+        <p>Tips, recipes, and inspiration for a healthy, sustainable lifestyle</p>
+    </div>
+
+    <!-- Blog Posts -->
+   <div class="blog-section">
+
+    <div class="blog-post">
+        <h2>5 Benefits of Eating Seasonal Vegetables</h2>
+        <p class="date">Published on July 10, 2025</p>
+        <p>Seasonal vegetables not only taste better but also offer peak nutrition. Learn why eating with the seasons can improve your health, support local farmers, and reduce your carbon footprint. Discover which veggies are in season right now!</p>
+    </div>
+
+    <div class="blog-post">
+        <h2>Refreshing Summer Fruit Smoothies</h2>
+        <p class="date">Published on June 28, 2025</p>
+        <p>Beat the heat with these delicious and nutritious fruit smoothie recipes. Try our mango-banana blast, tropical green detox, or the classic strawberry-mint refresher! Quick to make, naturally sweet, and perfect for busy mornings or post-workout energy.</p>
+    </div>
+
+    <div class="blog-post">
+        <h2>How to Store Your Organic Produce Properly</h2>
+        <p class="date">Published on June 14, 2025</p>
+        <p>Are you throwing away spoiled fruits and veggies too often? Learn smart techniques like wrapping leafy greens, storing root vegetables in the dark, and using breathable bags. Save money and reduce waste with these simple tricks!</p>
+    </div>
+
+    <div class="blog-post">
+        <h2>Top 7 Superfoods You Should Include in Your Diet</h2>
+        <p class="date">Published on May 30, 2025</p>
+        <p>Boost your immunity and energy naturally with nutrient-rich superfoods like kale, blueberries, avocado, and turmeric. This post explores how these foods benefit your body and how to easily add them to your daily meals.</p>
+    </div>
+
+    <div class="blog-post">
+        <h2>From Farm to Table: Why Organic Matters</h2>
+        <p class="date">Published on May 18, 2025</p>
+        <p>Organic farming isn't just about avoiding pesticides—it's about preserving soil health, protecting biodiversity, and ensuring clean food. Discover how supporting organic farming practices helps you and the planet.</p>
+    </div>
+
+    <div class="blog-post">
+        <h2>Eco-Friendly Kitchen Tips for a Sustainable Home</h2>
+        <p class="date">Published on May 5, 2025</p>
+        <p>Your kitchen can be a powerful place for change! Reduce plastic waste, compost scraps, reuse jars, and buy in bulk. Learn practical, student-friendly steps to make your cooking space more planet-friendly without spending extra money.</p>
+    </div>
+
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <table class="footer-table">
+            <tr>
+                <td rowspan="6" class="footer-logo-call"><img src="Fresh mart.png" alt="logo" class="footer-logo"><br>
+                    <p class="footer-desc">
+                        Your trusted source for fresh, organic vegetables<br> and fruits.Delivered straight from local
+                        farms to<br> your doorstep.
+                    </p>
+                </td>
+                <td class="footer-head" style="color: black;"> QUICK LINKS</td>
+                <td class="footer-head" style="color: black;">CUSTOMER SERVICE</td>
+                <td class="footer-head" style="color: black;">CONTACT US</td>
+            </tr>
+            <tr>
+                <td>Shop all</td>
+                <td>My Account</td>
+                <td>📞 0985688503</td>
+            </tr>
+            <tr>
+                <td>Vegetables</td>
+                <td>Order History</td>
+                <td>📧 hello@freshmart.com</td>
+            </tr>
+            <tr>
+                <td>Fruits</td>
+                <td>About Us</td>
+                <td>📍 123 Farm Street Fresh Valley, CA 90210</td>
+            </tr>
+            <tr>
+                <td>Organic</td>
+                <td>Contact</td>
+            </tr>
+            <tr>
+                <td>Seasonal</td>
+                <td>Blog</td>
+            </tr>
+        </table>
+    </footer>
+
 </body>
 
 </html>
